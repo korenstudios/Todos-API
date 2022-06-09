@@ -1,0 +1,35 @@
+@local=http://localhost:3000
+
+### Add todo
+
+POST {{local}}/api/todos
+Content-Type: application/json
+
+{
+"todo": "watch movies"
+}
+
+### Get all todos
+
+GET {{local}}/api/todos
+
+### Get todo by id
+
+GET {{local}}/api/todos/62410bcea9059a28abdac756
+
+### Update todo
+
+PATCH {{local}}/api/todos/62410bcea9059a28abdac756
+Content-Type: application/json
+
+{
+"todo": "Woopsss!!! this todo updated..."
+}
+
+### Delete todo
+
+DELETE {{local}}/api/todos/62410bcea9059a28abdac756
+
+### Delete all todos
+
+DELETE {{local}}/api/todos
